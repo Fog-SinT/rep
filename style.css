@@ -1,0 +1,224 @@
+/* Стиль для посилань, href яких починається з "https" */
+a[href^="https"] {
+    color: red;
+}
+
+/* Стиль для <p>, який іде після <ul> */
+ul+p {
+    font-size: 24px;
+}
+:root {
+    --primary-color: #3498db; /* Основний колір */
+    --secondary-color: #2ecc71; /* Другорядний колір */
+    --text-color: #333; /* Колір тексту */
+    --background-color: #f4f4f4; /* Колір фону */
+    --link-color: #3498db; /* Колір посилань */
+    --link-hover-color: #2980b9; /* Колір посилань при наведенні */
+    --header-background-color: #2c3e50; /* Колір фону шапки */
+    --footer-background-color: #2c3e50; /* Колір фону підвалу */
+    --button-background-color: #3498db; /* Колір фону кнопок */
+    --button-hover-background-color: #2980b9; /* Колір фону кнопок при наведенні */
+    --section-dark-background-color: #2c3e50; /* Темний колір фону секції */
+    --section-light-background-color: #ffffff; /* Світлий колір фону секції */
+    --team-member-background-color: #ffffff; /* Колір фону команди */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background-color);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover {
+    color: var(--link-hover-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--button-background-color);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section:nth-child(even) {
+    background-color: var(--section-light-background-color);
+}
+
+.section:nth-child(odd) {
+    background-color: var(--section-dark-background-color);
+    color: white;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    background-color: var(--team-member-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--footer-background-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Текст Бокс */
+.text-box h3:first-of-type {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+.text-box div p {
+    color: red;
+}
+
+.text-box p:nth-of-type(3) {
+    color: green;
+}
+
+.text-box .yellow {
+    color: yellow;
+}
+
+/* Щоденник */
+/* Зміна кольорів за днями */
+.day:nth-child(1) ul li {
+    background-color: #FFC0CB; /* Рожевий */
+}
+
+.day:nth-child(2) ul li {
+    background-color: #ADD8E6; /* Світло-синій */
+}
+
+.day:nth-child(3) ul li {
+    background-color: #90EE90; /* Світло-зелений */
+}
+
+.day:nth-child(4) ul li {
+    background-color: #FFD700; /* Золотий */
+}
+
+.day:nth-child(5) ul li {
+    background-color: #FFA07A; /* Світло-кораловий */
+}
+
+/* Псевдокласи стану */
+ul li:hover {
+    color: white; /* Зміна кольору тексту при наведенні */
+}
+
+ul li:active {
+    transform: scale(1.1); /* Збільшення при кліку */
+}
+
+ul li:focus {
+    outline: 2px solid #0000FF; /* Обведення при фокусуванні */
+}
+
+ul li:nth-child(even) {
+    font-weight: bold; /* Жирний шрифт для парних елементів */
+}
+
+ul li:first-child {
+    border-bottom: 2px solid black; /* Нижня рамка для першого елемента */
+}
+
+/* Псевдокласи структури */
+.day:nth-of-type(odd) {
+    border: 2px solid #000; /* Рамка для непарних днів */
+}
+
+.day:nth-of-type(even) {
+    border: 2px dashed #000; /* Пунктирна рамка для парних днів */
+}
+
+ul li:last-child {
+    background-color: #E6E6FA; /* Фоновий колір для останнього елемента списку */
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 10px; /* Відступ для всіх елементів, крім останнього */
+}
+
+ul li:nth-of-type(3) {
+    text-decoration: underline; /* Підкреслення третього елемента в списку */
+}
