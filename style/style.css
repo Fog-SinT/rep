@@ -1,3 +1,10 @@
+.container{
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;  
+}
+
+
 /* Стиль для посилань, href яких починається з "https" */
 a[href^="https"] {
     color: red;
