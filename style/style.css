@@ -1,19 +1,8 @@
 .container{
-    width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;  
+    width: 1600px;
+    height: 600px;
 }
 
-
-/* Стиль для посилань, href яких починається з "https" */
-a[href^="https"] {
-    color: red;
-}
-
-/* Стиль для <p>, який іде після <ul> */
-ul+p {
-    font-size: 24px;
-}
 :root {
     --primary-color: #3498db; /* Основний колір */
     --secondary-color: #2ecc71; /* Другорядний колір */
@@ -198,70 +187,8 @@ footer a:hover {
     color: yellow;
 }
 
-/* Щоденник */
-/* Зміна кольорів за днями */
-.day:nth-child(1) ul li {
-    background-color: #FFC0CB; /* Рожевий */
-}
 
-.day:nth-child(2) ul li {
-    background-color: #ADD8E6; /* Світло-синій */
-}
-
-.day:nth-child(3) ul li {
-    background-color: #90EE90; /* Світло-зелений */
-}
-
-.day:nth-child(4) ul li {
-    background-color: #FFD700; /* Золотий */
-}
-
-.day:nth-child(5) ul li {
-    background-color: #FFA07A; /* Світло-кораловий */
-}
-
-/* Псевдокласи стану */
-ul li:hover {
-    color: white; /* Зміна кольору тексту при наведенні */
-}
-
-ul li:active {
-    transform: scale(1.1); /* Збільшення при кліку */
-}
-
-ul li:focus {
-    outline: 2px solid #0000FF; /* Обведення при фокусуванні */
-}
-
-ul li:nth-child(even) {
-    font-weight: bold; /* Жирний шрифт для парних елементів */
-}
-
-ul li:first-child {
-    border-bottom: 2px solid black; /* Нижня рамка для першого елемента */
-}
-
-/* Псевдокласи структури */
-.day:nth-of-type(odd) {
-    border: 2px solid #000; /* Рамка для непарних днів */
-}
-
-.day:nth-of-type(even) {
-    border: 2px dashed #000; /* Пунктирна рамка для парних днів */
-}
-
-ul li:last-child {
-    background-color: #E6E6FA; /* Фоновий колір для останнього елемента списку */
-}
-
-ul li:not(:last-child) {
-    margin-bottom: 10px; /* Відступ для всіх елементів, крім останнього */
-}
-
-ul li:nth-of-type(3) {
-    text-decoration: underline; /* Підкреслення третього елемента в списку */
-}
-.container3_h2{
+.container3{
     font-family: var(--font-family);
 font-weight: 700;
 font-size: 36px;
