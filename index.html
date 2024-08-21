@@ -6,9 +6,17 @@
     <title>WebStudio</title>
     <link rel="stylesheet" href="./style/modern-normalize.css" />
     <link rel="stylesheet" href="./style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header >
+    <header>
       <section class="hero">
         <div class="container header">
           <nav class="header-nav">
@@ -35,39 +43,51 @@
     <main>
       <section class="small">
         <div class="container small-wrap">
-          <h1 class="small-item">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="small-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
           <button class="btn">Замовити послугу</button>
         </div>
       </section>
 
-      <section class="section-list">
+      <section class="section-details">
         <div class="container">
-          <ul class="list">
-            <h3 class="list-h3">Увага до деталей</h3>
-            <li class="list-li">
-              Індивідуальний підхід та увага до кожної деталі в формуванні
-              рішень.
+          <ul class="details-list">
+            <li class="list-item">
+              <h3 class="list-title"><br />Увага до деталей</h3>
+              <p class="list-text">
+                Індивідуальний підхід та увага до кожної деталі в формуванні
+                рішень.
+              </p>
             </li>
-            <h3 class="list-h3">Пунктуальність</h3>
-            <li class="list-li">
-              Дотримання дедлайнів, особливого режиму роботи та планування.
+            <li class="list-item">
+              <h3 class="list-title"><br />Пунктуальність</h3>
+              <p class="list-text">
+                Дотримання дедлайнів, особливого режиму роботи та планування.
+              </p>
             </li>
-            <h3 class="list-h3">Планування</h3>
-            <li class="list-li">
-              Тільки коректна і перевірена інформація, що веде до успіху.
+            <li class="list-item">
+              <h3 class="list-title"><br />Планування</h3>
+              <p class="list-text">
+                Тільки коректна і перевірена інформація, що веде до успіху.
+              </p>
             </li>
-            <h3 class="list-h3">Сучасні технології</h3>
-            <li class="list-li">
-              Використання нових технологій для реалізації поставлених завдань.
+            <li class="list-item">
+              <h3 class="list-title"><br />Сучасні технології</h3>
+              <p class="list-text">
+                Використання нових технологій для реалізації поставлених
+                завдань.
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section-img">
+      <section class="section-aboutus">
         <div class="container">
           <div class="items">
-            <h2 class="items-h2">Чим ми займаємося</h2>
+            <h2 class="items-txt">Чим ми займаємося</h2>
             <div class="items-img">
               <img class="item-img" src="/img/box1.jpg" alt="Picture1" />
             </div>
@@ -82,29 +102,37 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team-h2">Наша команда</h2>
-          <ol class="team-list">
-            <img class="team-img" src="/img/img.jpg" alt="Ігор Джаменко" />
-            <li class="team-li">Ігор Джаменко<br />Product Designer</li>
+          <div class="team-box">
+            <h2 class="team-name">Наша команда</h2>
+            <ul class="team-list">
+              <img class="team-img" src="/img/img.jpg" alt="Ігор Джаменко" />
+              <li class="team-text">Ігор Джаменко</li>
+              <li class="team-quote">Product Designer</li>
 
-            <img class="team-img" src="/img/img2.jpg" alt="Ольга Резіна" />
-            <li class="team-li">Ольга Резіна<br />Frontend Developer</li>
+              <img class="team-img" src="/img/img2.jpg" alt="Ольга Резіна" />
+              <li class="team-text">Ольга Резіна</li>
+              <li class="team-quote">Frontend Developer</li>
 
-            <img class="team-img" src="/img/img3.jpg" alt="Микола Тарасов" />
-            <li class="team-li">Микола Тарасов<br />Marketing</li>
+              <img class="team-img" src="/img/img3.jpg" alt="Микола Тарасов" />
+              <li class="team-text">Микола Тарасов</li>
+              <li class="team-quote">Marketing</li>
 
-            <img class="team-img" src="/img/img4.jpg" alt="Михайло Єрмаков" />
-            <li class="team-li">Михайло Єрмаков<br />UI Designer</li>
-          </ol>
+              <img class="team-img" src="/img/img4.jpg" alt="Михайло Єрмаков" />
+              <li class="team-text">Михайло Єрмаков</li>
+              <li class="team-quote">UI Designer</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <section class="section-footer">
         <div class="container">
-          <p class="footer-webstudio">WebStudio</p>
-          <p class="footer-adress">м. Київ, вул. Тараса Шевченка, 28</p>
-          <p class="footer-info">info@webstudio.com | +38 096 111 11 11</p>
+          <div class="footer-items">
+            <p class="footer-name">WebStudio</p>
+            <p class="footer-adress">м. Київ, вул. Тараса Шевченка, 28</p>
+            <p class="footer-info">info@webstudio.com | +38 096 111 11 11</p>
+          </div>
         </div>
       </section>
     </footer>
