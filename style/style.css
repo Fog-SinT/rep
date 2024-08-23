@@ -169,6 +169,7 @@ ul {
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
+
 }
 
 .items {
@@ -185,18 +186,45 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 50px;
 }
 
-.team-box {
+.team{
+  background: #f5f4fa;
+  padding-top: 94px;
+  text-align: center;
+  padding-bottom: 94px;
+}
+
+
+.team-list {
   display: flex;
   align-content: stretch;
   align-items: center;
-  flex-direction: column;
+  column-gap: 30px;
+  
+}
+.team-list li{
+  background: #fff;
 }
 
-.team-img {
-  width: 270px;
-  height: 260px;
+.team-name{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+margin-bottom: 50px;
+}
+
+.items-img {
+ display: flex;
+ column-gap: 30px;
+}
+
+.section-aboutus{
+margin-bottom:94px ;
 }
 
 .team-text {
@@ -206,6 +234,7 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .team-quote {
@@ -215,6 +244,13 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
+  padding-bottom: 30px;
+}
+
+.team-img{
+  width: 270px;
+height: 260px;
+margin-bottom: 30px;
 }
 
 /* =====================================================================FOOTER======================================================================================= */
@@ -225,6 +261,8 @@ footer {
   align-content: stretch;
   align-items: center;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-items {
